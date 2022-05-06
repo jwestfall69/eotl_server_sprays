@@ -1,0 +1,8 @@
+LightmappedGeneric
+{
+	"$basetexture"	"custom/eotl-sprays/maps_set3-2022-02-20"
+	"$translucent" "1"
+	"$decal" "1"
+	"$decalscale" "0.25"
+
+}
