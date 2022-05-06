@@ -7,7 +7,7 @@ These are the steps I used to generate them
 ### Creating screenshots in TF2
 <hr>
 
-  * Set video resolution to 1920x1080 (or some other 16:9 rez)
+  * Set video resolution to 1920x1080 (or some other 16:9 resolution)
   * Start local game with whatever map you want
   * Pick a team/class and spawn
   * Run the following commands (I suggest putting them in a pics.cfg file and running that)
@@ -28,7 +28,7 @@ This should remove all hud related stuff from the screen and just leave the map 
 
   * Take the screenshot
 
-### Creating The Mini Map Images
+### Creating The Mini-Map Images
 <hr>
 
   * I did this in gimp on MacOS
@@ -42,19 +42,19 @@ This should remove all hud related stuff from the screen and just leave the map 
   * Export, save as png
 
 
-### Merging The Mini Map Images Into A Map Set PNG
+### Merging The Mini-Map Images Into A Map Set PNG
 <hr>
 
   * Note: Textures width and height must be a power of 2, this is why the map set pngs are so much larger then they need to be.
   * Open an existing map set png file
   * Open 16 mini map pngs
   * For each mini map png, copy/paste it over an existing mini map in the set png
-  * Save as, picking a different name
+  * Export, save as png picking a different name
 
 ### Convert the PNG Into A Spray/Decal
 <hr>
 
   * Fire up VTFEdit
   * Import the map set png
-  * Save as replacing .png with .vtf
+  * Save as, replacing .png with .vtf
   * Use one of the exist .vmt files to make one for your new map set spray
