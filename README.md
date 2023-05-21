@@ -3,13 +3,13 @@
 ### Overview
 <hr>
 
-This is a TF2 sourcemod plugin.
+This is a TF2 sourcemod plugin I wrote for the [EOTL](https://www.endofthelinegaming.com/) community.
 
-This plugin as the name suggests allows for server side sprays.  These sprays can be automatically applied to maps based on the eotl_server_sprays.cfg config file.  The idea for this plugin comes from [Franug-Sprays](https://github.com/Franc1sco/Franug-Sprays).
+This plugin, as the name suggests, allows for server side sprays.  These sprays can be automatically applied to maps based on the eotl_server_sprays.cfg config file.  The idea for this plugin comes from [Franug-Sprays](https://github.com/Franc1sco/Franug-Sprays).
 
-The main motivation for this plugin is to help people make the link between map names (at vote time) and actual maps by having a server spray in each spawn that contains a kinda info graphic of a bunch of maps/map names.  But the server sprays can be place anywhere in the map.
+The main motivation for this plugin was to help people make the link between map names (at vote time) and actual maps by having a server spray in each spawn that contains a kinda info graphic of a bunch of maps/map names.  But the server sprays can be place anywhere in the map.
 
-**NOTE**: While this plugin refers to stuff as sprays they are technically decals in source engine lingo.  Because they are actually decals, the format of the .vmt files is slightly different then normal client side spray .vmt files. Additionally the sprays are temporary entities, meaning the server doesn't track the entities and instead just sends the command to the client so show spray at location xyz.  As such the sprays dont count towards the servers max entities.
+**NOTE**: While this plugin refers to stuff as sprays they are technically decals in source engine lingo.  Because of this the format of the .vmt files is slightly different then normal client side spray .vmt files. Additionally the sprays are temporary entities, meaning the server doesn't track the entities and instead just sends the command to the client so show spray at location xyz.  As such the sprays don't count towards the servers max entities.
 
 By default players have server side sprays enabled.
 
@@ -24,6 +24,10 @@ This command will disable server side sprays.  The change will not take effect u
 
 This command will re-enable server side sprays.  The user should see the sprays instantly.
 
+The enabled/disabled value for the client is saved to a client cookie so it persists across connections.
+
+<br>
+<br>
 When eotl_ss_command_limited is set to 0 the following additional forms of !ss are enabled for all players.  These are used to figure out spray placement so they can be added to the config file.
 
 **!ss list**
